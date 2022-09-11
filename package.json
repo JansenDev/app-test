@@ -4,9 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --open",
     "predeploy": "tsc && vite build",
-    "preview": "vite preview",
+    "preview": "npm run predeploy && vite preview --open",
     "deploy":"gh-pages -d dist"
   },
   "dependencies": {
